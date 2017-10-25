@@ -1,0 +1,10 @@
+import metodosordemanamiento.metodos;
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Operaciones<Integer> op =new Operaciones <>(Integer.class);
+	}
+
+}

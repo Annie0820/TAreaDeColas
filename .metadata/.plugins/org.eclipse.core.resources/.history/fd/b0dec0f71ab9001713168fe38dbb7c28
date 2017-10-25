@@ -1,0 +1,23 @@
+package app;
+
+import listas.LinkedList;
+
+public class App {
+
+	public static void main(String[] args){
+		LinkedList<String> names     = new LinkedList<String>();
+		LinkedList<String> lastnames = new LinkedList<String>();
+		LinkedList<Integer>ages      = new LinkedList<Integer>();
+		names.AddBefore("Ana");
+		names.AddBefore("Ricardos");
+		names.AddLastRec("Andrik");
+		names.addlast("Ricardos","karla");
+
+		//names.addbeffor("karla", "loli");
+		
+		//names.RF();
+		names.pronter();
+		System.out.println("no marco error");
+		
+	}
+}

@@ -1,0 +1,57 @@
+public class App {
+	public static void main(String args[]){
+		operaciones <Integer> b= new operaciones<>(Integer.class);
+		b.add(20);
+		b.add(458);
+		b.add(45);
+		b.add(330);
+		
+		
+		System.out.println("-----------heapsort-------------");
+		Integer[] bsort =b.fnSortheap1();
+		for (Integer integer : bsort) {
+			System.out.println(integer);
+		}
+		System.out.println("-----------quicksort-------------");
+		Integer[] bquik =b.quick1();
+		for (Integer integer : bquik) {
+			System.out.println(integer);
+		}
+		System.out.println("-----------shellsort-------------");
+		Integer[] bshell =b.shellsorts();
+		for (Integer integer : bquik) {
+			System.out.println(integer);
+		}
+		operaciones<Double>x=new operaciones<>(Double.class);
+		x.add(2.4);
+		x.add(3.45);
+		x.add(1.2);
+		x.add(5.51);
+		x.add(69.0);
+		System.out.println("-----------coctails-------------");
+		Double[] xcoct=x.coctails();
+		for (double double1 : xcoct) {
+			System.out.println(double1);
+	}
+		operaciones<Integer>c=new operaciones<>(Integer.class);
+		c.add(10);
+		c.add(35);
+		c.add(220);
+		c.add(347);
+		c.add(-1);
+		System.out.println("-----------burbuja-------------");
+		Integer[] bbur =c.seleccionburbujas();
+		for (Integer integer : bbur) {
+			System.out.println(integer);
+		}
+		System.out.println("-----------bucketsort-------------");
+		b.val();
+		System.out.println("-----------radixsort-------------");
+		//c.radixSorts();
+		System.out.println("-----------mergesort-------------");
+//		/Integer vec[]={1,3,5,7,8};
+		//c.mostrar(vec);
+		
+		
+	}
+}

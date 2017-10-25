@@ -1,0 +1,26 @@
+package app;
+
+import listas.LinkedList;
+import node.node;
+
+public class App {
+
+	public static void main(String[] args){
+		LinkedList<String> names     = new LinkedList<String>();
+		LinkedList<String> lastnames = new LinkedList<String>();
+		LinkedList<Integer>ages      = new LinkedList<Integer>();
+		names.AddBefore("Ana");
+		names.AddBefore("Ricardos");
+		names.AddLastRec("Laura");
+		names.AddLastRec("Andrik");
+		
+		//names.RemoveFirst();
+		names.addlast("Ricardos","karla");
+		names.GetFirst();
+		//names.addbeffor("karla", "loli");
+		names.removeFirst();
+		
+		names.pronter();
+		
+	}
+}

@@ -1,0 +1,4 @@
+
+public class Operaciones {
+	Operaciones <Integer> op = new Operaciones <>(Integer.class);
+}
